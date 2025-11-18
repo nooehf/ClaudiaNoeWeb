@@ -67,6 +67,14 @@ const ViajesMap = () => {
                     <span role="img" aria-label="barco">🛥️</span> De los mejores planes fueron coger un barco para nosotros solos visitando las calas o ir a una playa enorme de arena blanca con aguas cristalinas.<br/>
                     <span style={{ color: '#e75480', fontWeight: 600 }}>¡Un viaje inolvidable!</span>
                   </div>
+                ) : dest.nombre === 'Oporto' ? (
+                  <div style={{ lineHeight: '1.6', fontSize: '1.08rem', fontWeight: 500 }}>
+                    <span role="img" aria-label="avión">✈️</span> <strong>Escapada de 4 días a Oporto</strong>, ¡Nuestro primer vuelo juntos!<br/>
+                    <span role="img" aria-label="apartamento">🏠</span> Dormimos en un apartamento en el centro, recorrimos mil cuestas y vimos mil vistas panorámicas guays.<br/>
+                    <span role="img" aria-label="restaurante">🍽️</span> Fuimos a cenar a un restaurante con vistas al mar y el atardecer.<br/>
+                    <span role="img" aria-label="cerveza">🍻</span> Lo mejor: nos pilló el apagón allí, hinchándonos a cerveza y poniendo velas.<br/>
+                    <span style={{ color: '#e75480', fontWeight: 600 }}>¡Momentos únicos!</span>
+                  </div>
                 ) : (
                   <span style={{ color: '#aaa' }}>Añade aquí la descripción de {dest.nombre}</span>
                 )}
