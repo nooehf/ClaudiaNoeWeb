@@ -60,8 +60,16 @@ const ViajesMap = () => {
             <div className="viaje-info">
               <h3 style={{ color: '#e75480', marginBottom: '0.5rem' }}>{dest.nombre}</h3>
               <div style={{ minHeight: '60px', marginBottom: '1rem', borderRadius: '8px', border: '1px solid #e75480', padding: '0.5rem', fontSize: '1rem', background: '#fff', color: '#444' }}>
-                {/* Aquí irá la descripción fija de {dest.nombre} */}
-                <span style={{ color: '#aaa' }}>Añade aquí la descripción de {dest.nombre}</span>
+                {dest.nombre === 'Cerdeña' ? (
+                  <div style={{ lineHeight: '1.6', fontSize: '1.08rem', fontWeight: 500 }}>
+                    <span role="img" aria-label="avión">✈️</span> <strong>Un pedazo viaje de una semana</strong>, volando a <b>Cagliari</b> y cogiendo allí un coche para recorrer la isla.<br/>
+                    <span role="img" aria-label="playa">🏖️</span> Vimos playas super guays, comimos comida italiana, condujimos por carreteras difíciles (bueno Noé)...<br/>
+                    <span role="img" aria-label="barco">🛥️</span> De los mejores planes fueron coger un barco para nosotros solos visitando las calas o ir a una playa enorme de arena blanca con aguas cristalinas.<br/>
+                    <span style={{ color: '#e75480', fontWeight: 600 }}>¡Un viaje inolvidable!</span>
+                  </div>
+                ) : (
+                  <span style={{ color: '#aaa' }}>Añade aquí la descripción de {dest.nombre}</span>
+                )}
               </div>
             </div>
             <div className="viaje-carrusel">
