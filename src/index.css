@@ -74,9 +74,14 @@ button:focus-visible {
   .viaje-section {
     margin-left: 1rem;
     margin-right: 1rem;
+    box-sizing: border-box;
+    max-width: calc(100vw - 2rem);
+    overflow-x: auto;
   }
   .viaje-info {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    box-sizing: border-box;
+    max-width: 100%;
   }
 }
