@@ -1,0 +1,112 @@
+.profile-container {
+  display: flex;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.profile-card {
+  flex: 1;
+  max-width: 500px;
+  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid transparent;
+  background: linear-gradient(90deg, #ff8da8 0%, #5eb3e6 100%);
+  padding: 4px;
+}
+
+.profile-image img {
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #fff;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
+  -ms-interpolation-mode: bicubic;
+  transform: scale(1.2);
+}
+
+.profile-name {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff8da8 0%, #5eb3e6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.profile-birth {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.profile-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.profile-instagram {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5eb3e6;
+  background: transparent;
+  border: 2px solid #5eb3e6;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-instagram:hover {
+  background: linear-gradient(90deg, #5eb3e6 0%, #ff8da8 100%);
+  color: #fff;
+  transform: scale(1.07);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+  
+  .profile-card {
+    max-width: 100%;
+  }
+  
+  .profile-name {
+    font-size: 1.5rem;
+  }
+  
+  .profile-description {
+    font-size: 1rem;
+  }
+}

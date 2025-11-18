@@ -1,0 +1,65 @@
+.calendar-block {
+  position: relative;
+  margin: 2rem auto;
+  padding-top: 38px;
+  background: url('/calendar-cartoon.svg') center top no-repeat;
+  background-size: 400px 340px;
+  min-width: 340px;
+  max-width: 95vw;
+  width: 400px;
+  height: 340px;
+  z-index: 2;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.calendar-block-anillas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 38px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  z-index: 20;
+}
+.calendar-block-anilla {
+  width: 38px;
+  height: 38px;
+  margin: 0 8px;
+}
+
+.calendar-block-base {
+  position: absolute;
+  left: -18px;
+  bottom: -38px;
+  width: calc(100% + 36px);
+  height: 38px;
+  background: linear-gradient(90deg, #2a4c8a 80%, #3a6cc8 100%);
+  border-radius: 0 0 18px 18px;
+  box-shadow:
+    0 24px 64px 0 rgba(0,0,0,0.35),
+    0 2px 0 0 #1a2c4a;
+  transform: skew(-16deg, 0deg);
+  z-index: 1;
+}
+.calendar-block-holes {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 15;
+}
+.calendar-block-hole {
+  width: 16px;
+  height: 16px;
+  background: radial-gradient(circle at 6px 6px, #bbb 60%, #fff 100%);
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+  border: 2px solid #e0e0e0;
+}

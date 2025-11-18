@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.counter-page {
+  position: absolute;
+  top: 90px;
+  left: 80px;
+  width: 240px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4rem;
+  color: #222;
+  letter-spacing: 6px;
+  z-index: 10;
+  pointer-events: none;
+}
+.counter-pages-container {
+  position: relative;
+  width: 472px;
+  height: 600px;
+  margin: 2rem auto;
+  background: url('/calendar-photo.png') center center no-repeat;
+  background-size: contain;
+}

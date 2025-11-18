@@ -1,0 +1,41 @@
+/* Estilos para el efecto flip tipo calendario */
+.flip-container {
+  perspective: 600px;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+.flip-card {
+  position: relative;
+  width: 70px;
+  height: 80px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #e75480;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.flip-card.flip {
+  animation: flipAnim 0.5s;
+}
+@keyframes flipAnim {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(-90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+.flip-label {
+  font-size: 1rem;
+  color: #213547;
+  margin-top: 0.2rem;
+  text-align: center;
+}

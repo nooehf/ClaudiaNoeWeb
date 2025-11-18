@@ -1,0 +1,134 @@
+.timeline-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  position: relative;
+  min-height: 900px;
+}
+
+.timeline-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #ff8da8 0%, #5eb3e6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.timeline {
+  position: relative;
+  margin: 0;
+  padding: 2rem 0 2rem 0;
+  list-style: none;
+  min-height: 900px;
+  z-index: 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(180deg, #ff8da8 0%, #5eb3e6 100%);
+  border-radius: 4px;
+  z-index: 1;
+  box-shadow: 0 0 12px #ff8da833, 0 0 12px #5eb3e633;
+  opacity: 0.85;
+}
+
+.timeline-event {
+  position: relative;
+  width: 48%;
+  margin-bottom: 2.5rem;
+  background: #fbeaff;
+  /* pastel rosa-lila que combina con el degradado principal */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 1.2rem 1rem 1.2rem 2.5rem;
+  z-index: 2;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.timeline-event.left {
+  left: 0;
+  float: left;
+  clear: left;
+}
+.timeline-event.right {
+  right: 0;
+  float: right;
+  clear: right;
+}
+
+.timeline-event::before {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  left: -1.2rem;
+  width: 22px;
+  height: 22px;
+  background: linear-gradient(135deg, #ff8da8 0%, #5eb3e6 100%);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  border: 3px solid #fff;
+  z-index: 2;
+}
+
+.timeline-event.right::before {
+  left: auto;
+  right: -1.2rem;
+}
+
+.timeline-date {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #5eb3e6;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-text {
+  font-size: 1.15rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-details {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 0.7rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+  .timeline-event {
+    width: 100%;
+    float: none;
+    left: 0;
+    right: 0;
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+  }
+  .timeline-event.right::before {
+    left: -1.2rem;
+    right: auto;
+  }
+  .timeline::before {
+    left: 24px;
+    transform: none;
+  }
+}
