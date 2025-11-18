@@ -75,6 +75,14 @@ const ViajesMap = () => {
                     <span role="img" aria-label="cerveza">🍻</span> Lo mejor: nos pilló el apagón allí, hinchándonos a cerveza y poniendo velas.<br/>
                     <span style={{ color: '#e75480', fontWeight: 600 }}>¡Momentos únicos!</span>
                   </div>
+                ) : dest.nombre === 'Madrid' ? (
+                  <div style={{ lineHeight: '1.6', fontSize: '1.08rem', fontWeight: 500 }}>
+                    <span role="img" aria-label="tren">🚄</span> <strong>Nuestro primer viaje juntos</strong> de un fin de semana, regalo de Noé a Claudia por navidad.<br/>
+                    <span role="img" aria-label="corazón">💝</span> Cogimos un Ave a Madrid el día de San Valentín, cenamos en una terraza con vistas a la Gran Vía.<br/>
+                    <span role="img" aria-label="regalo">🎁</span> Nos dimos nuestros regalos de enamorados...<br/>
+                    <span role="img" aria-label="tour">🗺️</span> Noé le hizo un tour a Claudia por Madrid enseñándole los sitios más guays.<br/>
+                    <span style={{ color: '#e75480', fontWeight: 600 }}>¡Un finde para recordar!</span>
+                  </div>
                 ) : (
                   <span style={{ color: '#aaa' }}>Añade aquí la descripción de {dest.nombre}</span>
                 )}
