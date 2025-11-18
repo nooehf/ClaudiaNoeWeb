@@ -35,12 +35,13 @@ const Inicio = () => {
       <div style={{ textAlign: 'center', margin: '2.5rem auto 2rem auto', maxWidth: '500px', background: 'linear-gradient(90deg, #ffb6c1 0%, #87cefa 100%)', borderRadius: '18px', boxShadow: '0 2px 12px rgba(0,0,0,0.08)', padding: '2rem 1.5rem' }}>
         <h2 style={{
           fontSize: '1.6rem',
-          fontWeight: '700',
+          fontWeight: '900',
           marginBottom: '1rem',
           background: 'linear-gradient(90deg, #ff8da8 0%, #5eb3e6 100%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
+          textShadow: '0 2px 8px rgba(90,90,90,0.18), 0 1px 0 #fff'
         }}>
           ¡Bienvenid@ a la web de Claudia y Noé!
         </h2>
