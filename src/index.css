@@ -69,3 +69,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media (max-width: 600px) {
+  .viaje-section {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .viaje-info {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
