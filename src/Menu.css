@@ -8,12 +8,19 @@
   position: relative;
 }
 .menu-title {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 900;
   color: #333;
   position: absolute;
   left: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Segoe Script', cursive, sans-serif;
+  background: linear-gradient(90deg, #ff8da8 0%, #5eb3e6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 8px rgba(90,90,90,0.12), 0 1px 0 #fff;
+  letter-spacing: 1px;
+  transition: font-size 0.2s;
 }
 .menu-toggle {
   display: none;
@@ -65,9 +72,10 @@
     padding: 1.2rem 0.5rem;
   }
   .menu-title {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-left: 0.5rem;
     left: 0.5rem;
+    letter-spacing: 0.5px;
   }
   .menu ul {
     display: none;
