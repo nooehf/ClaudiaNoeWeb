@@ -32,6 +32,26 @@ const Inicio = () => {
         <CircularGallery items={galleryItems} bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02}/>
       </div>
 
+      <div style={{ textAlign: 'center', margin: '2.5rem auto 2rem auto', maxWidth: '500px', background: 'linear-gradient(90deg, #ffb6c1 0%, #87cefa 100%)', borderRadius: '18px', boxShadow: '0 2px 12px rgba(0,0,0,0.08)', padding: '2rem 1.5rem' }}>
+        <h2 style={{
+          fontSize: '1.6rem',
+          fontWeight: '700',
+          marginBottom: '1rem',
+          background: 'linear-gradient(90deg, #ff8da8 0%, #5eb3e6 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+        }}>
+          ¡Bienvenid@ a la web de Claudia y Noé!
+        </h2>
+        <p style={{ fontSize: '1.15rem', color: '#444', fontWeight: '500', marginBottom: '0.5rem' }}>
+          Adéntrate en la mejor relación del mundo, conociendo a sus protagonistas, su historia, viajes y anécdotas.
+        </p>
+        <p style={{ fontSize: '1.08rem', color: '#e75480', fontWeight: '600', marginBottom: 0 }}>
+          Esta web es un regalo de Noé a Claudia tras el primer año siendo novioooooos.
+        </p>
+      </div>
+
       <div className="profile-container">
         <div className="profile-card">
           <div className="profile-image">
