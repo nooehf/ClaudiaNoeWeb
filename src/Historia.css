@@ -132,3 +132,19 @@
     transform: none;
   }
 }
+
+@media (max-width: 600px) {
+  .timeline-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    box-sizing: border-box;
+    max-width: calc(100vw - 2rem);
+    overflow-x: auto;
+  }
+  .timeline-event {
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+}
